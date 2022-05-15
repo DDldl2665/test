@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.finalprojecttest.Controller2">
+   <left>
+      <RadioButton fx:id="rb1" mnemonicParsing="false" onAction="#rb1Click" text="A" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <RadioButton fx:id="rb2" mnemonicParsing="false" onAction="#rb2Click" text="B" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <RadioButton fx:id="rb3" mnemonicParsing="false" onAction="#rb3Click" text="C" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <GridPane prefHeight="428.0" prefWidth="722.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="v" fitHeight="79.0" fitWidth="301.0" onDragDetected="#rb1Click" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="v" fitHeight="81.0" fitWidth="302.0" onDragDetected="#rb2Click" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView fx:id="v" fitHeight="76.0" fitWidth="300.0" onDragDetected="#rb3Click" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>
